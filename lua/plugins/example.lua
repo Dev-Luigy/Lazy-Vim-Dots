@@ -28,7 +28,7 @@ return {
   },
 
   -- disable trouble
-  { "folke/trouble.nvim", enabled = false },
+  -- { "folke/trouble.nvim", enabled = false },
 
   -- override nvim-cmp and add cmp-emoji
   {
@@ -66,7 +66,6 @@ return {
   -- add tsserver and setup with typescript.nvim instead of lspconfig
   -- for typescript, LazyVim also includes extra specs to properly setup lspconfig,
   -- treesitter, mason and typescript.nvim. So instead of the above, you can use:
-  { import = "lazyvim.plugins.extras.lang.typescript" },
 
   {
     "zbirenbaum/copilot.lua",
@@ -109,28 +108,16 @@ return {
       highlight = { enable = true },
       indent = { enable = true },
       ensure_installed = {
-        "bash",
-        "c",
         "diff",
         "html",
         "javascript",
         "jsdoc",
         "json",
         "jsonc",
-        "lua",
-        "luadoc",
-        "luap",
-        "markdown",
-        "markdown_inline",
-        "printf",
-        "python",
         "query",
         "regex",
         "toml",
-        "tsx",
-        "typescript",
         "vim",
-        "vimdoc",
         "xml",
         "yaml",
       },
@@ -187,17 +174,4 @@ return {
 
   -- add jsonls and schemastore packages, and setup treesitter for json, json5 and jsonc
   { import = "lazyvim.plugins.extras.lang.json" },
-
-  -- add any tools you want to have installed below
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "flake8",
-      },
-    },
-  },
 }
