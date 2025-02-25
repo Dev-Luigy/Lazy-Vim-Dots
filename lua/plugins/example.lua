@@ -120,6 +120,8 @@ return {
         "vim",
         "xml",
         "yaml",
+        "rust",
+        "ron"
       },
       incremental_selection = {
         enable = true,
